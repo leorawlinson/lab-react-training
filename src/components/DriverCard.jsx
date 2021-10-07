@@ -1,10 +1,4 @@
 import React from 'react';
-const ratingStyle = {
-  borderStyle: 'solid',
-  fontSize: '20px',
-  paddingLeft: '10px',
-  margin: '5px',
-};
 
 function ratingDecider(rating) {
   const roundedRating = Math.round(rating);
@@ -25,12 +19,17 @@ function ratingDecider(rating) {
       return '☆☆☆☆☆';
   }
 }
-function Rating({ children }) {
+
+function DriverCard({ name, rating, img, car }) {
   return (
     <div>
-      <p style={ratingStyle}>{ratingDecider(Number(children))}</p>
+      <img style={{ maxWidth: '200px' }} src={img} alt="profile" />
+      <p>{name}</p>
+      <p>{ratingDecider(rating)}</p>
+      <p>{car.model}</p>
+      <p>{car.licensePlate}</p>
     </div>
   );
 }
 
-export default Rating;
+export default DriverCard;

@@ -28,7 +28,7 @@ function CreditCard({
           justifyContent: 'flex-end',
         }}
       >
-        <p>{type}</p>
+        <img src={type}></img>
       </div>
       <br />
       <div style={{ flexDirection: 'column' }}>

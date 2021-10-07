@@ -12,7 +12,7 @@ const idStyle = {
 function IdCard({ lastname, firstname, gender, height, birth, picture }) {
   return (
     <div style={idStyle}>
-      <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="id" />
+      <img src={picture} alt="id" />
       <div>
         <p>
           <strong>Last name:</strong>

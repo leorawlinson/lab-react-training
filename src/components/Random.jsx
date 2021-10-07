@@ -14,8 +14,9 @@ function randomNum(num) {
 function Random({ min, max }) {
   return (
     <div style={randomStyle}>
-      <p>Random value between 1 and 6 => {randomNum(min)}</p>
-      <p>Random value between 1 and 100 => {randomNum(max)}</p>
+      <p>
+        Random value between {min} and {max} => {randomNum(max)}
+      </p>
     </div>
   );
 }
