@@ -2,10 +2,11 @@ import React from 'react';
 
 const idStyle = {
   display: 'flex',
-  justifyContent: 'flexEnd',
+  textAlign: 'left',
   borderStyle: 'solid',
   margin: '5px',
   maxHeight: '185px',
+  maxWidth: '400px',
   padding: '10px',
 };
 

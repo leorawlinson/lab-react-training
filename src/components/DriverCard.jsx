@@ -1,5 +1,13 @@
 import React from 'react';
 
+const driverStyle = {
+  borderStyle: 'solid',
+  fontSize: '20px',
+  paddingLeft: '10px',
+  margin: '5px',
+  backgroundColor: 'lightblue',
+};
+
 function ratingDecider(rating) {
   const roundedRating = Math.round(rating);
   switch (true) {
@@ -22,7 +30,7 @@ function ratingDecider(rating) {
 
 function DriverCard({ name, rating, img, car }) {
   return (
-    <div>
+    <div style={driverStyle}>
       <img style={{ maxWidth: '200px' }} src={img} alt="profile" />
       <p>{name}</p>
       <p>{ratingDecider(rating)}</p>
